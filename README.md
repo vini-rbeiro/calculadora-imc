@@ -8,6 +8,7 @@
 <h2>Descrição do projeto</h2>
 
 <p>Este projeto foi desenvolvido com o foco de colocar em prática os estudos de Javascript que vem sendo aprendido.</p>
+<p><a href="https://vini-rbeiro.github.io/calculadora-imc/">Clique aqui</a> para acessar a página do projeto.</p>
 
 <br><p>:iphone: <b>Funcionalidade 1</b>: A página tem uma responsividade satisfatória para qualquer dispositivo (mobile, tablet e desktop).</p>
 
