@@ -1,0 +1,166 @@
+:root {
+  --sandyBrown: #917f6e;
+  --peachPuff: #efbc98;
+  --wheat: #efd2be;
+  --linen: #efe1d1;
+  --teaGreen: #d9ddcd;
+}
+
+body {
+  min-height: 100vh;
+
+  font-family: "Poppins", sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: linear-gradient(var(--peachPuff), var(--sandyBrown));
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.weight500 {
+  font-weight: 500;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.75rem;
+
+  border: 2px solid black;
+  border-radius: 8px;
+
+  padding: 2em 1em;
+}
+
+.main_contentTop {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6px;
+}
+
+.main_contentTop p {
+  margin: 0;
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.main_contentTop input {
+  width: 150px;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid rgb(38, 38, 38);
+
+  background-color: #efd2beb1;
+
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.568);
+}
+
+::placeholder {
+  font-size: 12.5px;
+}
+
+.main_contentFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+}
+
+.main_contentFooter p {
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+.main_contentFooter input {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0.6em 0;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 2px 2px black;
+  background-color: #e2ba9dad;
+}
+
+.main_contentFooter input:active {
+  background-color: #b4937c8d;
+}
+
+@media (max-width: 375px) {
+  #main {
+    width: 330px;
+  }
+
+  .main_contentTop input {
+    width: 135px;
+  }
+}
+
+@media (min-width: 768px) {
+  #main {
+    width: 600px;
+  }
+
+  .main_contentTop {
+    justify-content: space-around;
+  }
+
+  .main_contentTop input {
+    width: 240px;
+  }
+
+  .main_contentFooter input:hover {
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1024px) {
+  #main {
+    width: 800px;
+
+    padding: 3em 1em;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .main_contentTop input {
+    width: 280px;
+    padding: 12px;
+  }
+
+  .main_contentTop p {
+    font-size: 14px;
+  }
+
+  ::placeholder {
+    font-size: initial;
+  }
+}
