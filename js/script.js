@@ -12,7 +12,7 @@ const pesoObeso3 = document.getElementById("pesoObeso3");
 
 enviar.addEventListener("click", () => {
   const pesoValor = parseInt(peso.value);
-  const alturaValor = parseInt(altura.value) / 100;
+  const alturaValor = parseInt(altura.value.replace(/[,\.]/g, "")) / 100;
 
   const calcularImc = pesoValor / alturaValor ** 2;
 
